@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+#配置数据源
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:/mysql:/47.112.11.90:3306/aaa?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      connection-timeout: 100000
+      maximum-pool-size: 15
+      auto-commit: true
+
